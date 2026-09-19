@@ -1,0 +1,414 @@
+<!DOCTYPE html>  <!--ini untuk mengetahui bahwa Memberitahu browser dokumen ini pakai standar HTML5, biar tidak tampil dalam mode lama (Quirks Mode).-->
+<html lang="id"> <!--ini untuk Akar dari seluruh halaman. Atribut lang="id" memberitahu bahasa utama website adalah Bahasa Indonesia.-->
+    <head> <!--tag ini untuk membuat kepala website-->
+        <meta charset="UTF-8"> <!--ini untuk Membuat browser bisa menampilkan berbagai karakter dengan benar, termasuk huruf beraksen.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ini untuk Membuat website menyesuaikan ukuran layar perangkat — penting untuk Responsive Web Design nanti.-->
+        <title>SIWA | Sistem Informasi Wisata Indonesia</title> <!--ini untuk memberi judul website-->
+        <link rel="stylesheet" href="css\setyl.css">
+    </head>
+    <body> <!--ini untuk membuat isi website-->
+        <header class="kepala-web"> 
+            <img src="assets/images/logo.png" alt="logo wisata" width="80" class="logo"><!--ini untuk memunculkan gambar pada logo isi website-->
+            <h1 class="site-title">SIWA</h1> <!--ini untuk menulis judul halaman web-->
+            <p class="site-tagline">Sistem Informasi Wisata Indonesia</p> <!--ini untuk memberikan komentar/penjelasan-->
+        </header>
+        <nav class="navbar"> <!--ini untuk menyimpan menu navigasi/identitas menu utama website-->
+            <ul class="nav-list"> <!--ini untuk menu daftar tanpa urutan angka-->
+                <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
+                    <a href="#" class="nav-link">Beranda</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                </li>
+                <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
+                    <a href="#" class="nav-link">Destinasi</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                </li>
+                <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
+                    <a href="#" class="nav-link">Media</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                </li>
+                <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
+                    <a href="#" class="nav-link">Kontak</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                </li>
+            </ul>
+        </nav>
+        <main class="main"> <!--tag <main> ini untuk tempat menyimpan seluruh isi utama website. Dalam satu halaman HTML, hanya boleh ada satu <main>.-->
+            <section class="hero" > <!--tag <section> ini untuk mengelompokan konten yang memiliki tema sama-->
+                <div class="hero-content"><!--tag <div> ini untuk sebagai wadah atau kontainer umum dalam HTML. Elemen ini digunakan untuk mengelompokkan berbagai elemen lain (seperti teks, gambar, atau formulir) guna mengatur layout halaman dan memudahkannya saat diberi gaya dengan CSS atau dimanipulasi menggunakan JavaScript.-->
+                    <h2 class="hero-title">
+                        Jelajahi Wisata Terbaik di Indonesia
+                    </h2>
+                    <p class="hero-description"> <!--ini untuk mengisi paragraf/artikel-->
+                        Temukan destinasi wisata terbaik dengan 
+                        informasi lengkap, mudah, dan terpercaya.
+                    </p>
+                    <button class="hero-button"> <!--tag button> ini untuk Tombol atau ajakan yang mendorong pengunjung melakukan tindakan tertentu, misalnya "Jelajahi Sekarang". -->
+                        Jelajahi sekarang
+                    </button>
+                </div>
+                <div class="hero-image"> <!--tag <div> ini sebagai wadah/container umum dalam html-->
+                    <img 
+                        src="assets/images/siwa.png" 
+                        alt="sistem informasi wisata" 
+                        class="hero-img"
+                        width="500"> <!--width ini untuk mengatur ukuran besar gambar-->
+                </div>
+            </section>
+            <section class="destinations"><!--Mengelompokkan seluruh informasi destinasi wisata.|Identitas section destinasi agar mudah diatur lewat CSS.-->
+                <div class="container"><!--Membuat lebar isi konsisten dengan section lain-->
+                    <h2 class="section-title">
+                        Destinasi Wisata
+                    </h2>
+                    <P class="section-description">
+                        Jelajahi berbagai destinasi wisata terbaik di Indonesia
+                    </P>
+                    <div class="destination-list">
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/pantai_kuta.png"
+                                    alt="pantai-kuta"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                        Pantai Kuta
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                     pantai Kuta adalah salah satu destinasi wisata pantai paling ikonik dan terkenal yang terletak di Kecamatan Kuta, Kabupaten Badung, Bali. Menghadap langsung ke Samudra Hindia, pantai ini telah menjadi pusat pariwisata utama di Pulau Dewata sejak awal tahun 1970-an. Dahulunya, kawasan ini merupakan sebuah desa nelayan yang sepi sekaligus pelabuhan dagang aktif milik kerajaan Bali.
+                                    </p>
+                                    <a href="#" class="btn-detail">
+                                        Lihat Detail
+                                    </a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/gunung_bromo.png"  
+                                    alt="gunung bromo"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                        Gunung Bromo
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Gunung Bromo adalah gunung berapi aktif yang terkenal dengan keindahan pemandangan matahari terbit dan lautan pasirnya, terletak di Jawa Timur serta mencakup empat wilayah kabupaten yaitu Probolinggo, Pasuruan, Lumajang, dan Malang.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/candi_borobudur.png"  
+                                    alt="candi borobudur"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                        Candi Borobudur
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Candi Borobudur adalah candi Buddha terbesar di dunia, peninggalan Dinasti Syailendra, dan Situs Warisan Dunia UNESCO.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/kawah_putih.png"  
+                                    alt="kawah putih"
+                                    class="destination-image">-
+                                    <h3 class="destination-title">
+                                        Kawah Putih
+                                    </h3>
+                                    <p class="destination-text">
+                                        Kawah Putih adalah sebuah danau kawah vulkanik eksotis yang terletak di Ciwidey, Kabupaten Bandung, Jawa Barat. Berada di kaki Gunung Patuha, destinasi ini terkenal dengan air danaunya yang berwarna putih kehijauan atau hijau toska yang unik karena dapat berubah warna sesuai dengan kadar belerang, suhu, dan cuaca.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/gunung_rinjani.png"  
+                                    alt="gunung rinjani"
+                                    class="destination-image">-
+                                    <h3 class="destination-title">
+                                        Gunung Rinjani
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Percakapan Mode AI: gunung rinjanigunung rinjaniGunung Rinjani adalah gunung berapi aktif setinggi 3.726 meter di atas permukaan laut (mdpl) yang terletak di Pulau Lombok, Nusa Tenggara Barat. Gunung ini memegang predikat sebagai gunung berapi tertinggi kedua di Indonesia.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/raja_ampat.png"  
+                                    alt="raja ampat"
+                                    class="destination-image">-
+                                    <h3 class="destination-title">
+                                        Raja Ampat
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Raja Ampat adalah wilayah kepulauan yang terletak di barat Semenanjung Kepala Burung, Pulau Papua, dan secara administratif berada di bawah Provinsi Papua Barat Daya, Indonesia. Wilayah yang sering dijuluki sebagai "Surga Terakhir di Bumi" ini merupakan pusat keanekaragaman hayati laut tertinggi di dunia, rumah bagi lebih dari 75% spesies karang dunia serta ribuan jenis ikan tropis.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/dieng.png"
+                                    alt="pintu langit Dieng"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                        Pintu Langit Sky View
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Pintu Langit Sky View merupakan salah satu destinasi wisata terpopuler di kawasan Dataran Tinggi Dieng, Wonosobo, Jawa Tengah, yang menawarkan lanskap spektakuler berupa hamparan awan dan pegunungan dari ketinggian sekitar 2.000 meter di atas permukaan laut. 
+                                    </p>
+                                    <a href="#" class="btn-detail">
+                                        Lihat Detail
+                                    </a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/pai.png"  
+                                    alt="pantai alam indah"
+                                    class="destination-image">-
+                                    <h3 class="destination-title">
+                                        Pantai Alam Indah
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                    Pantai Alam Indah (PAI) adalah objek wisata bahari andalan di Kota Tegal, Jawa Tengah, yang menawarkan panorama Laut Jawa, Monumen Bahari, serta fasilitas rekreasi keluarga
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/guci.png"  
+                                    alt="guci Forest"
+                                    class="destination-image">-
+                                    <h3 class="destination-title">
+                                        Guci Forest
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Guci Forest adalah salah satu destinasi wisata unggulan di Kabupaten Tegal, Jawa Tengah, yang memadukan keindahan alam hutan pinus dengan fasilitas rekreasi modern di kaki Gunung Slamet. Wisata ini terkenal karena suasananya yang sejuk karena berada di ketinggian sekitar 1.200 mdpl.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                    </div>
+                </div>
+            </section>
+            <section class="media">
+                <div class="container">
+                    <h2 class="section-title">Media Wisata</h2>
+                    <p class="section-description">
+                        Nikmati audio, video, dan lokasi destinasi wisata.
+                    </p> 
+                    <!-- Pembungkus Utama -->
+                    <div class="media-content">
+                        <!-- Komponen 1: Audio Wisata -->
+                        <div class="media-audio">
+                            <h3>Audio Wisata</h3>
+                            <audio controls class="audio-player">
+                                <source src="assets/audio/ocean-waves-02.mp3" type="audio/mpeg">
+                                Browser Anda tidak mendukung audio.
+                            </audio>
+                        </div>                   
+                        <!-- Komponen 2: Video Wisata -->
+                        <div class="media-video">
+                            <h3>Video Wisata</h3>
+                            <video controls class="video-player" width="500">
+                            <source src="assets/video/indonesia-4k-drone.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung video.
+                            </video>
+                        </div>
+                        <!-- Komponen 3: Peta Google Maps Embed -->
+                        <div class="media-map">
+                            <h3>Lokasi Wisata</h3>
+                            <iframe
+                                class="map-frame"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.18086528587!2d112.9427124337819!3d-7.942472071297693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1786070723350!5m2!1sid!2sid"
+                                width="300" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div> 
+            </section> 
+            <!--contac section-->
+            <section class="contact">
+                <div class="container">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="section-description">
+                        Silakan hubungi kami apabila membutuhkan 
+                        informasi lebih lanjut.
+                    </p>
+                    <div class="contact-content">
+                        <address class="contact-address">
+                            Jl. Wisata Indonesia No. 10 <br>
+                            Tegal km.9 <br>
+                            Jawa Tengah
+                        </address>
+                        <p class="contact-phone">
+                            Telepon : <a href="tel:+62895405199266">(0274) 496402</a> 
+                        </p>
+                        <p class="contact-email">
+                            Email : <a href="mailto:saefudin.zuhri234@smk.belajar.id">saefudin.zuhri234@smk.belajar.id</a>
+                        </p>
+                        <p class="contact-WhatsApp">
+                            WhatsApp : <a href="https://wa.me/62895405199266">Hubungi kami</a>
+                        </p>
+                        <p class="contact-hours">
+                            Jam Operasional <br>
+                            Senin - Jumat <br>
+                            08.00 - 16.00 WIB
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Informasi Wisata (Episode 9) -->
+            <section class="information">
+                <div class="container">
+                    <h2 class="section-title">Informasi Wisata</h2>
+                    <p class="section-description">
+                         Berikut informasi harga tiket 
+                        dan jam operasional.
+                    </p>
+                    <h3 class="table-title">Harga Tiket</h3>
+                    <table class="info-table">  <!--<table> Wadah utama tabel. Tanpa ini, browser tidak tahu kita sedang membuat tabel-->
+                        <tr>                       <!--<tr> Membuat satu baris horizontal. Setiap baris baru = satu <tr>.-->
+                            <th>Jenis Tiket</th>    <!--<th> Judul kolom yang otomatis tebal & tengah. Penting untuk aksesibilitas (screen reader).-->
+                            <th>Harga</th>
+                        </tr>
+                        <tr>
+                            <td>Dewasa</td>     <!--<td> Sel data biasa. Tempat menaruh angka, teks, atau isi aktual tabel.-->
+                            <td>Rp25.000</td>
+                        </tr>
+                        <tr>
+                            <td>Anak-anak</td>
+                            <td>Rp15.000</td>
+                        </tr>
+                        <tr>
+                            <td>Lansia</td>
+                            <td>Rp10.000</td>
+                        </tr>
+                        <tr>
+                            <td>Wisatawan Asing</td>
+                            <td>Rp50.000</td>
+                        </tr>
+                    </table>
+                    <h3 class="table-title">Jam Operasional</h3> <!--table-title Class untuk judul di atas tabel, agar bisa dibedakan dari section-title utama.-->
+                    <table class="info-table">      <!-- tag <table> adalah untuk membuat tabel yang digunakan untuk menyajikan data tabular pada halaman web.-->
+                        <tr>        <!--tag <tr> (Table Row) adalah untuk membuat baris baru di dalam sebuah tabel HTML.-->
+                            <th>Hari</th>       <!--tag <th> (Table Header) adalah untuk membuat sel judul pada kolom atau baris di dalam sebuah tabel HTML.-->
+                            <th>Jam Operasional</th>
+                        </tr>
+                        <tr>
+                            <td>Senin - Jum,at</td>     <!-- tag <td> (Table Data) adalah untuk membuat sel data biasa di dalam baris tabel HTML.-->
+                            <td>08.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sabtu</td>
+                            <td>08.00 - 17.00</td>
+                        </tr>
+                        <tr>
+                            <td>Minggu</td>
+                            <td>08.00 - 18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Hari Libur Nasional</td>
+                            <td>07.00 - 20.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- Informasi Tambahan (Episode 10)-->
+            <section class="information-list">      <!--digunakan untuk mengelompokkan konten yang memiliki satu tema atau topik yang sama ke dalam satu bagian terpisah di dalam dokumen HTML.-->
+                <div class="container">     <!--digunakan sebagai kontainer (wadah) kelompok untuk menyatukan beberapa elemen-->
+                    <h2 class="section-title">Informasi Tambahan</h2>
+                    <p class="section-description">     <!--untuk menampilkan teks dalam bentuk paragraf pada halaman web.-->
+                        Ketahui fasilitas, peraturan, dan cara melakukan pemesanan tiket wisata.
+                    </p>
+                    <div class="facility">      <!--digunakan sebagai kontainer (wadah) kelompok untuk menyatukan beberapa elemen-->
+                        <h3 class="list-title">Fasilitas Wisata</h3>
+                        <ul class="facility-list">      <!--tag <ul> (Unordered List) adalah untuk membuat daftar rincian dalam bentuk poin-poin (bullet points) yang tidak memerlukan urutan kronologis atau nomor.-->
+                            <li>Area Parkir</li>        <!-- tag <li> (List Item) adalah untuk membungkus setiap butir atau item informasi di dalam sebuah daftar halaman web.-->
+                            <li>Mushola</li>
+                            <li>Toilet</li>
+                            <li>Restoran</li>
+                            <li>Spot Foto</li>
+                        </ul>
+                    </div>
+                    <div class="rules">
+                        <h3 class="list-title">Peraturan Pengunjung</h3>
+                        <ul class="rules-list">
+                            <li>Menjaga kebersihan area wisata.</li>
+                            <li>Tidak membuang sampah sembarangan.</li>
+                            <li>Tidak merusak fasilitas umum.</li>
+                            <li>Mengikuti petunjuk dari petugas.</li>
+                        </ul>
+                    </div>
+                    <div class="booking-stop">
+                        <h3 class="list-title">Cara Pemesanan Tiket</h3>
+                        <ol class="booking-list">       <!--tag <ol> (Ordered List) adalah untuk membuat daftar rincian dalam bentuk urutan yang teratur, seperti angka, huruf, atau angka romawi.-->
+                            <li>Pilih destinasi wisata.</li>
+                            <li>Tentukan tanggal kunjungan.</li>
+                            <li>Siapkan identitas diri.</li>
+                            <li>Lakukan pembayaran di loket.</li>
+                            <li>Lakukan pembayaran di loket.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Pemesanan Tiket (Episode 11) -->   
+            <section class="booking">
+                <div class="container">
+                    <h2 class="section-title">Form Pemesanan Tiket</h2>
+                    <p class="section-description">
+                        Silakan isi formulir berikut untuk melakukan pemesanan tiket wisata.
+                    </p>
+                </div>
+            </section>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="fullname">Nama Lengkap</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="Masukan Nama Lengkap">
+                </div>
+            </form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Masukan email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor HP</label>
+                <input type="tel" id="phone" class="form-control" placeholder="08xxxxxxxxxx">
+            </div>
+            <div class="form-group">
+                <label for="destination">Pilih Destinasi</label>
+                <select id="destination" class="form-control">
+                    <option>Pantai Kuta</option>
+                    <option>Gunung Bromo</option>
+                    <option>Candi Borobudur</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="visit-date">Tanggal Kunjungan</label>
+                <input type="date" id="visit-date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ticket">Jumlah Tiket</label>
+                <input type="number" id="ticket" class="form-control" min="1" placeholder="Masukan Jumlah Tiket">
+            </div>
+            <div class="form-group">
+                <label for="note">Catatan</label>
+                <textarea id="note" class="form-control" rows="5" placeholder="Tulis catatan tambahan"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Pesan Tiket</button>
+        </main>
+        <!-- footer (Episode 8) -->
+        <footer class="footer">     <!--footer Penanda semantic bahwa ini adalah area penutup halaman.-->
+            <div class="container">
+                <h2 class="footer-title">SIWA</h2>
+                <p class="footer-description"> Sistem Informasi Wisata Indonesia</p>
+                <p class="footer-copy">&copy; 2026 SIWA. Semua Hak Dilindungi </p>
+                <h3 class="footer-subtitle">Quick Links</h3>
+                <ul class="footer-links">       <!--ul / li Membuat daftar (list) Quick Links yang terstruktur, bukan sekadar teks yang dipisahkan koma.-->
+                    <li class="footer-item"><a href="#" class="footer-link">Beranda</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Destinasi</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Media</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Kontak</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
