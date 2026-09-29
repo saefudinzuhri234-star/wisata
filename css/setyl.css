@@ -269,36 +269,6 @@ MEDIA WISATA
     border-radius: 10px;    /* Sudut membulat */
 }
 
-/* =========================================
-   RESPONSIVE HP
-========================================= */
-
-@media (max-width: 768px) {
-
-    .media {
-        padding: 50px 5%;
-    }
-
-    .media-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .media-title h2 {
-        font-size: 26px;
-    }
-
-    .media-audio,
-    .media-video,
-    .media-map {
-        padding: 20px;
-    }
-
-    .map-frame {
-        height: 280px;
-    }
-}
-
 
 /*=========================================
 KONTAK
@@ -345,21 +315,278 @@ KONTAK
     color: #083358;           /* Biru lebih gelap saat hover */
     text-decoration: underline; /* Underline muncul saat hover */
 }
-/*=========================================
-INFORMASI WISATA (TABLE)
-=========================================*/
+
 
 /*=========================================
-INFORMASI TAMBAHAN (LIST)
+INFORMASI WISATA (TABLE) (episode 22)
 =========================================*/
+.information {
+    padding: 60px 8%;
+    background-color: #f5f7fa;
+}
+
+.table-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #0f4c81;
+    font-size: 24px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse; /* 🪄 GARIS MENYATU! */
+    background-color: white;
+}
+
+.info-table th,
+.info-table td {
+    padding: 15px;
+    border: 1px solid #d9e2ec;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #0f4c81; /* Biru tua SIWA */
+    color: white;
+}
+
+.info-table tr:hover {
+    background-color: #eaf4ff; /* Biru sangat muda saat hover */
+}
+
 
 /*=========================================
-FORM PEMESANAN
+INFORMASI TAMBAHAN (LIST) (eps_23)
 =========================================*/
+.information-list {
+    padding: 60px 8%;
+    background-color: white; 
+}
+
+.facility,
+.rules,
+.booking-stop {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.list-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0f4c81;
+    font-size: 24px;
+}
+
+.facility-list,
+.rules-list,
+.booking-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.facility-list li,
+.rules-list li,
+.booking-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.facility-list li:last-child,
+.rules-list li:last-child,
+.booking-list li:last-child {
+    margin-bottom: 0;
+}
+
 
 /*=========================================
-FOOTER
+FORM PEMESANAN (eps 24)
 =========================================*/
+.booking {
+    padding: 60px 8%;
+    background-color: #f5f7fa;
+}
+
+.booking-form {
+    max-width: 700px;           /* Lebar maksimum 700px */
+    margin: 40px auto 0;        /* auto = ditengahkan! */
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;     /* Label berdiri sendiri di baris atas */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0f4c81;           /* Warna tema SIWA */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    outline: none;       /* Hapus outline bawaan browser */
+    border-color: #0f4c81;      /* Border biru tua */
+    box-shadow: 0 0 0 3px #dbeafe; /* ✨ Glow biru muda! */
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0f4c81;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #083358; /* Biru lebih gelap saat hover */ 
+}
 
 
+/*=========================================
+FOOTER (eps 25)
+=========================================*/
+.footer {
+    padding: 50px;
+    background-color: #083358; /* Biru sangat gelap */
+    color: white;
+    text-align: center; /* Semua konten di tengah */
+}
+
+.footer-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.footer-description {
+    margin-bottom: 15px;
+    color: #dbeafe; /* Biru sangat muda (soft) */
+}
+
+.footer-copy {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #dbeafe;
+}
+
+.footer-subtitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;              /* 🪄 SAKLAR UTAMA FLEXBOX! */
+    justify-content: center;  /* Link di tengah */
+    gap: 25px;                 /* Jarak antar link */
+    list-style: none;          /* Hapus bullet bawaan */
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    display: inline-block;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;   /* Hapus garis bawah */
+    font-weight: bold;
+    transition: 0.3s;        /* Animasi halus */
+}
+
+.footer-link:hover {
+    color: #ffd166;         /* 💛 Kuning hangat! */
+}
+
+
+/*=========================================
+RESPONSIVE DESIGN (Episode 26)
+=========================================*/
+@media (max-width: 768px) {
+    /* HEADER */
+    .header {
+        padding: 25px 15px; /* Padding lebih kecil di mobile */
+    }
+    .site-title {
+        font-size: 32px;
+    }
+    .site-tagline {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... header rules di atas ... */
+
+    /* NAVIGATION */
+    .nav-list {
+        flex-direction: column; /* 🪄 Horizontal → VERTICAL! */
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... header & nav rules di atas ... */
+
+    /* HERO */
+    .hero {
+        flex-direction: column; /* Teks atas, gambar bawah */
+        padding: 40px 6%;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... header, nav, hero rules di atas ... */
+
+    /* DESTINASI & MEDIA */
+    .destination-list,
+    .media-content {
+        grid-template-columns: 1fr; /* 🪄 3/2 kolom → 1 kolom! */
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... rules sebelumnya ... */
+
+    /* KONTAK & FOOTER */
+    .contact-content,
+    .footer-links {
+        flex-direction: column; /* 4 kartu → stack vertikal */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... rules sebelumnya ... */
+
+    /* FORM */
+    .booking-form {
+        padding: 20px; /* Padding lebih kecil di mobile */
+    }
+}
 
