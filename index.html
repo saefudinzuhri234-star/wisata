@@ -15,20 +15,23 @@
         <nav class="navbar"> <!--ini untuk menyimpan menu navigasi/identitas menu utama website-->
             <ul class="nav-list"> <!--ini untuk menu daftar tanpa urutan angka-->
                 <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
-                    <a href="#" class="nav-link">Beranda</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                    <a href="#beranda" class="nav-link">Beranda</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
                 </li>
                 <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
-                    <a href="#" class="nav-link">Destinasi</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                    <a href="#destinasi" class="nav-link">Destinasi</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
                 </li>
                 <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
-                    <a href="#" class="nav-link">Media</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                    <a href="#media" class="nav-link">Media</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
                 </li>
                 <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
-                    <a href="#" class="nav-link">Kontak</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                    <a href="#kontak" class="nav-link">Kontak</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
+                </li>
+                <li class="nav-item"> <!--ini untuk Setiap menu berada dalam satu item daftar tersendiri.-->
+                    <a href="#informasi" class="nav-link">Informasi</a> <!--ini untuk Membuat hyperlink yang bisa diklik untuk berpindah halaman/bagian.-->
                 </li>
             </ul>
         </nav>
-        <main class="main"> <!--tag <main> ini untuk tempat menyimpan seluruh isi utama website. Dalam satu halaman HTML, hanya boleh ada satu <main>.-->
+        <main id="beranda" class="main"> <!--tag <main> ini untuk tempat menyimpan seluruh isi utama website. Dalam satu halaman HTML, hanya boleh ada satu <main>.-->
             <section class="hero" > <!--tag <section> ini untuk mengelompokan konten yang memiliki tema sama-->
                 <div class="hero-content"><!--tag <div> ini untuk sebagai wadah atau kontainer umum dalam HTML. Elemen ini digunakan untuk mengelompokkan berbagai elemen lain (seperti teks, gambar, atau formulir) guna mengatur layout halaman dan memudahkannya saat diberi gaya dengan CSS atau dimanipulasi menggunakan JavaScript.-->
                     <h2 class="hero-title">
@@ -50,7 +53,7 @@
                         width="500"> <!--width ini untuk mengatur ukuran besar gambar-->
                 </div>
             </section>
-            <section class="destinations"><!--Mengelompokkan seluruh informasi destinasi wisata.|Identitas section destinasi agar mudah diatur lewat CSS.-->
+            <section id="destinasi" class="destinations"><!--Mengelompokkan seluruh informasi destinasi wisata.|Identitas section destinasi agar mudah diatur lewat CSS.-->
                 <div class="container"><!--Membuat lebar isi konsisten dengan section lain-->
                     <h2 class="section-title">
                         Destinasi Wisata
@@ -193,6 +196,45 @@
                                     </p>
                                     <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
                             </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/malioboro.png"  
+                                    alt="Malioboro"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                       Malioboro Jogja
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Malioboro Jogja adalah sebuah kawasan wisata berbasis ruang publik, budaya, dan perbelanjaan yang berpusat di sepanjang koridor Jalan Malioboro, Kota Yogyakarta. Tempat ini bukan sekadar objek wisata tunggal berbentuk bangunan, melainkan sebuah ekosistem pariwisata terbuka yang memadukan warisan sejarah kolonial dan kerajaan, aktivitas ekonomi kerakyatan, serta panggung ekspresi seni budaya Jawa dalam satu kawasan pedestrian.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/becici.png"  
+                                    alt="Puncak becici"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                       Puncak Becici
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Puncak Becici (atau dikenal sebagai Pinus Becici) merupakan salah satu objek wisata alam unggulan yang menawarkan keindahan hutan pinus dan panorama Yogyakarta dari ketinggian. Berlokasi di Dusun Gunungcilik, Desa Muntuk, Kecamatan Dlingo, Kabupaten Bantul, DI Yogyakarta, tempat yang pernah dikunjungi oleh mantan Presiden AS Barack Obama ini menjadi spot favorit wisatawan untuk berburu matahari terbenam (sunset).
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
+                            <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
+                                <img 
+                                    src="assets/images/RodjoTater.png"  
+                                    alt=" Rodjo Tater"
+                                    class="destination-image">
+                                    <h3 class="destination-title">
+                                        Rodjo Tater
+                                    </h3>
+                                    <p class="destination-text"> <!--Menampilkan deskripsi singkat destinasi-->
+                                        Wisata Rodjo Tater (singkatan dari Rodjo Tani Ternak) adalah salah satu destinasi wisata edukasi dan keluarga paling populer di Kabupaten Tegal, Jawa Tengah. Mengusung konsep alam pedesaan yang asri, tempat ini memadukan taman rekreasi modern dengan edukasi pertanian dan peternakan yang sangat cocok untuk anak-anak maupun liburan keluarga.
+                                    </p>
+                                    <a href="#" class="btn-detail">Lihat Detail</a><!--Tombol menuju halaman detail destinasi-->
+                            </article>
                              <article class="destination-card"><!--Satu informasi destinasi yang berdiri sendiri — nanti jadi satu record database-->
                                 <img 
                                     src="assets/images/pai.png"  
@@ -222,7 +264,7 @@
                     </div>
                 </div>
             </section>
-            <section class="media">
+            <section id="media" class="media">
                 <div class="container">
                     <h2 class="section-title">Media Wisata</h2>
                     <p class="section-description">
@@ -271,7 +313,7 @@
                             <h3>Lokasi Wisata</h3>
                             <iframe
                                 class="map-frame"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.18086528587!2d112.9427124337819!3d-7.942472071297693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sGn.%20Bromo!5e0!3m2!1sid!2sid!4v1786070723350!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d4404.748459106196!2d109.21773483147136!3d-6.86914983533513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-6.867125984654984!2d109.21584119211572!5e1!3m2!1sen!2sid!4v1790658448770!5m2!1sen!2sid" 
                                 width="300" 
                                 height="450" 
                                 style="border:0;" 
@@ -284,7 +326,7 @@
                 </div> 
             </section> 
             <!--contac section-->
-            <section class="contact">
+            <section id="kontak" class="contact">
                 <div class="container">
                     <h2 class="section-title">Hubungi Kami</h2>
                     <p class="section-description">
@@ -315,7 +357,7 @@
                 </div>
             </section>
             <!-- Informasi Wisata (Episode 9) -->
-            <section class="information">
+            <section id="informasi" class="information">
                 <div class="container">
                     <h2 class="section-title">Informasi Wisata</h2>
                     <p class="section-description">
@@ -423,36 +465,49 @@
                     <label for="fullname">Nama Lengkap</label>
                     <input type="text" id="fullname" class="form-control" placeholder="Masukan Nama Lengkap">
                 </div>
+            
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Masukan email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="08xxxxxxxxxx">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Pilih Destinasi</label>
+                    <select id="destination" class="form-control">
+                        <option>Pantai Kuta</option>
+                        <option>Gunung Bromo</option>
+                        <option>Candi Borobudur</option>
+                        <option>Kawah Putih</option>
+                        <option>Gunung Rinjani</option>
+                        <option>Raja Ampat</option>
+                        <option>Pintu Langit Sky View</option>
+                        <option>Candi Prambanan</option>
+                        <option>Danau Toba</option>
+                        <option>Gunung Cermai</option>
+                        <option></option>
+                        <option>Puncak Becici</option>
+                        <option></option>
+                        <option>Pantai Alam Indah</option>
+                        <option>Guci Forest</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="visit-date">Tanggal Kunjungan</label>
+                    <input type="date" id="visit-date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="ticket">Jumlah Tiket</label>
+                    <input type="number" id="ticket" class="form-control" min="1" placeholder="Masukan Jumlah Tiket">
+                </div>
+                <div class="form-group">
+                    <label for="note">Catatan</label>
+                    <textarea id="note" class="form-control" rows="5" placeholder="Tulis catatan tambahan"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Pesan Tiket</button>
             </form>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Masukan email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Nomor HP</label>
-                <input type="tel" id="phone" class="form-control" placeholder="08xxxxxxxxxx">
-            </div>
-            <div class="form-group">
-                <label for="destination">Pilih Destinasi</label>
-                <select id="destination" class="form-control">
-                    <option>Pantai Kuta</option>
-                    <option>Gunung Bromo</option>
-                    <option>Candi Borobudur</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="visit-date">Tanggal Kunjungan</label>
-                <input type="date" id="visit-date" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="ticket">Jumlah Tiket</label>
-                <input type="number" id="ticket" class="form-control" min="1" placeholder="Masukan Jumlah Tiket">
-            </div>
-            <div class="form-group">
-                <label for="note">Catatan</label>
-                <textarea id="note" class="form-control" rows="5" placeholder="Tulis catatan tambahan"></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Pesan Tiket</button>
         </main>
         <!-- footer (Episode 8) -->
         <footer class="footer">     <!--footer Penanda semantic bahwa ini adalah area penutup halaman.-->
