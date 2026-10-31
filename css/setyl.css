@@ -142,13 +142,13 @@ HERO SECTION
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.4s ease;                  /* Kursor berubah jadi tangan */
+    transition: 0.4s ease;                  /* Kursor berubah jadi tangan */
 }
 
 .hero-button:hover {
     background-color: #083358; /* Efek hover */
-    transform: rotate(-15deg);
-    box-shadow: o 4px 10px rgba(0, 0, 0, 0.10);
+    transform: translateY(-8px);
+    box-shadow: o 4px 10px rgba(0, 0, 0);
 }
 
 
@@ -178,7 +178,7 @@ DESTINASI WISATA - CSS GRID (Episode 18)
 
 /* STATE HOVER: Card "terangkat", bayangan lebih dalam */
 .destination-card:hover {
-    transform: translateY(-30px);                      /* Card "terangkat" */
+    transform: scale(1.1);                      /* Card "terangkat" */
     box-shadow: 0 8px 20px rgba(119, 158, 243, 0.904);     /* Bayangan lebih besar, 15% gelap */
 }
 
@@ -589,4 +589,21 @@ RESPONSIVE DESIGN (Episode 26)
         padding: 20px; /* Padding lebih kecil di mobile */
     }
 }
+
+.judul-highlight {
+    background: linear-gradient(0deg, #9bf7f7, #046bcab7);   ;
+    color: #333333;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.judul-highlight:hover {
+    background: linear-gradient(0deg, #9bf7f7d5, #046aca94);
+    box-shadow: 0 4px 7px rgb(92, 152, 241);
+    transform: scale(1.1);
+}
+
+
+   
 
