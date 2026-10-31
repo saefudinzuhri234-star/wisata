@@ -1,3 +1,4 @@
+alert("Selamat datang di SIWA!");
 // Ambil tombol dari HTML
 const heroButton = document.querySelector(".hero-button");
 const heroTitle = document.querySelector(".hero-title");
